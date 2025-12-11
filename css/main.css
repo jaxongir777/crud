@@ -1,0 +1,104 @@
+/* Container */
+.container {
+    max-width: 450px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 12px;
+    background: #f5f5f5;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Title */
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Input section */
+.input-wrapper {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.todo-input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #aaa;
+}
+
+.add-btn {
+    padding: 10px 20px;
+    border: none;
+    background: #2ecc71;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.add-btn:hover {
+    background: #27ae60;
+}
+
+/* Todo list styles */
+.todo-list {
+    list-style: none;
+    padding: 0;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.todo-text {
+    flex: 1;
+}
+
+/* Buttons */
+.edit-btn,
+.delete-btn {
+    margin-left: 10px;
+    padding: 6px 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.edit-btn {
+    background: #f1c40f;
+    color: #fff;
+}
+
+.edit-btn:hover {
+    background: #d4ac0d;
+}
+
+.delete-btn {
+    background: #e74c3c;
+    color: #fff;
+}
+
+.delete-btn:hover {
+    background: #c0392b;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .input-wrapper {
+        flex-direction: column;
+    }
+
+    .add-btn {
+        width: 100%;
+    }
+}
